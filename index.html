@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Askly AI - Smart Answer Engine</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+
+    <div class="brand">
+      <div class="logo">
+        <i class="fa-solid fa-sparkles"></i>
+      </div>
+
+      <div>
+        <h2>Askly AI</h2>
+        <span>Answer Engine</span>
+      </div>
+    </div>
+
+
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#discover">Discover</a>
+      <a href="#news">AI News</a>
+      <a href="#tools">Tools</a>
+    </nav>
+
+
+    <div class="nav-actions">
+
+      <button class="icon-btn">
+        <i class="fa-regular fa-moon"></i>
+      </button>
+
+      <button class="new-search">
+        <i class="fa-solid fa-plus"></i>
+        New Search
+      </button>
+
+    </div>
+
+  </header>
+
+
+  <!-- Main -->
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+
+      <div class="status-badge">
+        <span></span>
+        Powered by AI
+      </div>
+
+      <h1>
+        Ask anything.
+        <br />
+        <span>Understand everything.</span>
+      </h1>
+
+      <p class="hero-text">
+        Search, explore and understand any topic with fast AI-powered answers.
+      </p>
+
+
+      <!-- Search -->
+      <div class="search-wrapper">
+
+        <div class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <input
+          type="text"
+          id="question"
+          placeholder="Ask anything... e.g. What is artificial intelligence?"
+        />
+
+        <button id="askBtn">
+          Ask AI
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+
+      </div>
+
+
+      <!-- Quick Search -->
+      <div class="quick-search">
+
+        <span>Try:</span>
+
+        <button>
+          <i class="fa-solid fa-newspaper"></i>
+          Latest AI News
+        </button>
+
+        <button>
+          <i class="fa-solid fa-code"></i>
+          Programming
+        </button>
+
+        <button>
+          <i class="fa-solid fa-flask"></i>
+          Research
+        </button>
+
+        <button>
+          <i class="fa-solid fa-graduation-cap"></i>
+          Explain Simply
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- Answer Section -->
+    <section class="answer-section">
+
+      <div class="answer-card">
+
+        <div class="answer-top">
+
+          <div class="answer-title">
+
+            <div class="ai-avatar">
+              <i class="fa-solid fa-sparkles"></i>
+            </div>
+
+            <div>
+              <span>AI RESPONSE</span>
+              <h2>Answer</h2>
+            </div>
+
+          </div>
+
+
+          <div class="answer-actions">
+
+            <button>
+              <i class="fa-regular fa-copy"></i>
+              Copy
+            </button>
+
+            <button>
+              <i class="fa-solid fa-rotate-right"></i>
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <div id="answer" class="answer-content">
+
+          <div class="empty-answer">
+
+            <i class="fa-regular fa-message"></i>
+
+            <div>
+              <h3>Your answer will appear here</h3>
+
+              <p>
+                Ask a question above to start exploring with AI.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Discover -->
+    <section class="content-section" id="discover">
+
+      <div class="section-heading">
+
+        <div>
+          <span>EXPLORE</span>
+          <h2>Discover with AI</h2>
+        </div>
+
+        <a href="#">
+          View all
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+      </div>
+
+
+      <div class="discover-grid">
+
+        <div class="discover-card blue-card">
+
+          <div class="card-icon">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+
+          <span>ARTIFICIAL INTELLIGENCE</span>
+
+          <h3>Learn how modern AI actually works</h3>
+
+          <p>
+            Understand machine learning, LLMs and the technology behind AI.
+          </p>
+
+          <a href="#">Explore topic →</a>
+
+        </div>
+
+
+        <div class="discover-card purple-card">
+
+          <div class="card-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+
+          <span>DEVELOPMENT</span>
+
+          <h3>Build smarter applications</h3>
+
+          <p>
+            Learn Python, APIs, web development and AI integrations.
+          </p>
+
+          <a href="#">Start learning →</a>
+
+        </div>
+
+
+        <div class="discover-card green-card">
+
+          <div class="card-icon">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+
+          <span>TECHNOLOGY</span>
+
+          <h3>Understand emerging technology</h3>
+
+          <p>
+            Explore cloud, robotics, cybersecurity and future technology.
+          </p>
+
+          <a href="#">Discover more →</a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Trending -->
+    <section class="content-section">
+
+      <div class="section-heading">
+
+        <div>
+          <span>TRENDING</span>
+          <h2>Popular searches</h2>
+        </div>
+
+      </div>
+
+
+      <div class="trending-grid">
+
+        <button class="trend-item">
+
+          <div>
+            <span>01</span>
+
+            <div>
+              <h4>What is Generative AI?</h4>
+              <p>Technology</p>
+            </div>
+          </div>
+
+          <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+
+        <button class="trend-item">
+
+          <div>
+            <span>02</span>
+
+            <div>
+              <h4>How does ChatGPT work?</h4>
+              <p>Artificial Intelligence</p>
+            </div>
+          </div>
+
+          <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+
+        <button class="trend-item">
+
+          <div>
+            <span>03</span>
+
+            <div>
+              <h4>Best programming language in 2026</h4>
+              <p>Development</p>
+            </div>
+          </div>
+
+          <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+
+        <button class="trend-item">
+
+          <div>
+            <span>04</span>
+
+            <div>
+              <h4>AI tools for productivity</h4>
+              <p>AI Tools</p>
+            </div>
+          </div>
+
+          <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- AI News -->
+    <section class="content-section" id="news">
+
+      <div class="section-heading">
+
+        <div>
+          <span>DAILY UPDATE</span>
+          <h2>Latest in AI</h2>
+        </div>
+
+        <a href="#">
+          All news
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+      </div>
+
+
+      <div class="news-grid">
+
+        <article class="news-card featured-news">
+
+          <div class="news-image news-image-one">
+
+            <div class="news-tag">
+              AI
+            </div>
+
+          </div>
+
+          <div class="news-body">
+
+            <div class="news-meta">
+              <span>Artificial Intelligence</span>
+              <span>5 min read</span>
+            </div>
+
+            <h3>
+              AI models are becoming faster, smarter and more accessible
+            </h3>
+
+            <p>
+              Discover how the next generation of AI models is changing
+              software, search and digital experiences.
+            </p>
+
+            <a href="#">
+              Read story
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <div class="side-news">
+
+          <article class="small-news-card">
+
+            <div class="small-news-icon">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+
+            <div>
+
+              <span>Robotics</span>
+
+              <h3>
+                AI-powered robots are moving into everyday industries
+              </h3>
+
+              <p>Today · 4 min read</p>
+
+            </div>
+
+          </article>
+
+
+          <article class="small-news-card">
+
+            <div class="small-news-icon">
+              <i class="fa-solid fa-microchip"></i>
+            </div>
+
+            <div>
+
+              <span>Technology</span>
+
+              <h3>
+                New chips are being designed specifically for AI workloads
+              </h3>
+
+              <p>Today · 3 min read</p>
+
+            </div>
+
+          </article>
+
+
+          <article class="small-news-card">
+
+            <div class="small-news-icon">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <div>
+
+              <span>Security</span>
+
+              <h3>
+                Cybersecurity teams are increasingly using AI
+              </h3>
+
+              <p>Yesterday · 6 min read</p>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Tools -->
+    <section class="content-section" id="tools">
+
+      <div class="section-heading">
+
+        <div>
+          <span>AI TOOLKIT</span>
+          <h2>Explore AI tools</h2>
+        </div>
+
+      </div>
+
+
+      <div class="tools-grid">
+
+        <div class="tool-card">
+
+          <div class="tool-icon">
+            <i class="fa-solid fa-file-lines"></i>
+          </div>
+
+          <h3>Summarizer</h3>
+
+          <p>
+            Turn long content into simple summaries.
+          </p>
+
+          <button>Open Tool</button>
+
+        </div>
+
+
+        <div class="tool-card">
+
+          <div class="tool-icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+
+          <h3>Code Assistant</h3>
+
+          <p>
+            Understand, write and debug code with AI.
+          </p>
+
+          <button>Open Tool</button>
+
+        </div>
+
+
+        <div class="tool-card">
+
+          <div class="tool-icon">
+            <i class="fa-solid fa-pen-nib"></i>
+          </div>
+
+          <h3>Writing Assistant</h3>
+
+          <p>
+            Improve emails, articles and other content.
+          </p>
+
+          <button>Open Tool</button>
+
+        </div>
+
+
+        <div class="tool-card">
+
+          <div class="tool-icon">
+            <i class="fa-solid fa-language"></i>
+          </div>
+
+          <h3>Translator</h3>
+
+          <p>
+            Translate text into multiple languages.
+          </p>
+
+          <button>Open Tool</button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+      <div>
+
+        <span>START EXPLORING</span>
+
+        <h2>
+          Knowledge is just one question away.
+        </h2>
+
+        <p>
+          Search smarter with your personal AI answer engine.
+        </p>
+
+      </div>
+
+      <button>
+        Ask your first question
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+<footer>
+
+  <div class="footer-brand">
+
+    <div class="logo">
+      <i class="fa-solid fa-sparkles"></i>
+    </div>
+
+    <div>
+      <h3>Askly AI</h3>
+      <p>Your intelligent answer engine.</p>
+    </div>
+
+  </div>
+
+
+  <div class="footer-links">
+
+    <a href="#">About</a>
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="#">Contact</a>
+
+  </div>
+
+
+  <!-- Developer & Copyright -->
+  <div class="footer-credit">
+    <p>
+      Developed by <strong>Rahul Anand</strong>
+    </p>
+
+    <p>
+      &copy; 2026 Askly AI. All rights reserved.
+    </p>
+  </div>
+
+</footer>
+
+<script src="script.js"></script>
+ 
+</body>
+</html>
